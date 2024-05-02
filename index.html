@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Роботоход</title>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=Your API key&lang=en_US" type="text/javascript"></script>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="header__wrapper">
+                <img src="./img/logo.svg" alt="" class="header__logo">
+
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="nav__list-item">
+                            <a href="#about" class="nav__list-link">О нас</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="#price" class="nav__list-link">Стоимость</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="#contacts" class="nav__list-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header__info">
+                    <div class="header__info-number">
+                        <p class="header__tel">+7 981 204-48-40</p>
+                        <p class="header__worktime">ПН-ПТ 10:00–22:00</p>
+                    </div>
+                    <div class="header__nav-btn green-btn modal-btn burger-btn" data-modal="burger"><div><span>Меню</span></div></div>
+                    <div class="burger-btn burger-ico modal-btn" data-modal="burger"><img src="./img/burger-btn.svg" alt=""></div>
+                    <a href="#!" class="header__btn green-btn registration-btn modal-btn" data-modal="registration"><div><span>Записаться</span></div></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <section class="first-bunner bunner">
+                <div class="main-bunner">
+                    <img src="./img/main-bunner-bot.png" alt="" class="main__bunner-bot">
+                    <div class="main-bunner__content">
+                        <h1 class="main-title main__bunner-title">Семейная школа робототехники <span>Роботоход</span></h1>
+                        <p class="main__bunner-subtitle">для детей с 4 до 17 лет</p>
+                        <a href="#!" class="main__bunner-btn white-btn modal-btn" data-modal="registration">Пробное занятие</a>
+                    </div>
+                </div>
+                <a href="#!" class="main__bunner-btn green-btn green-filled modal-btn" data-modal="registration"><div><span>Пробное занятие</span></div></a>
+            </section>
+        </div>
+        <section class="why" id="about">
+            <div class="wrapper">
+                <h3 class="section-title why__title">Почему мы</h3>
+
+                <div class="swiper why-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="why__card">
+                                <span class="why__card-num num-1">1</span>
+
+                                <p class="why__card-title">Семейность</p>
+                                <p class="why__card-subtitle">Для нас важно участие семьи в поддержке инициатив будущего поколения.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why__card">
+                                <span class="why__card-num num-2">2</span>
+
+                                <p class="why__card-title">Поддержка</p>
+                                <p class="why__card-subtitle">При поддержке СПбГУ, РГПУ им. А.И. Герцена, СПбГУТ им. М.А. Бонч-Бруевича.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why__card">
+                                <span class="why__card-num num-3">3</span>
+
+                                <p class="why__card-title">Междисциплинарность</p>
+                                <p class="why__card-subtitle">Изучаем математику, программируем, конструируем и тестируем роботов.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="mission">
+            <div class="wrapper">
+                <h3 class="section-title mission__title">Миссия</h3>
+                <p class="mission__subtitle">Объединить людей и создать условия для подготовки к жизни в завтрашнем дне.</p>
+            </div>
+        </section>
+        <section class="age">
+            <div class="wrapper">
+                <h3 class="section-title age__title">Учитываем возраст</h3>
+
+                <div class="swiper age-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="age__card">
+                                <img class="age__card-img" src="./img/age-card-1.png" alt="">
+                                <p class="age__card-title">Для малышей от 4 лет</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="age__card">
+                                <img class="age__card-img" src="./img/age-card-2.png" alt="">
+                                <p class="age__card-title">Для детей от 7 лет</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="age__card">
+                                <img class="age__card-img" src="./img/age-card-3.png" alt="">
+                                <p class="age__card-title">Для подростков от 12 лет</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="wrapper">
+            <section class="try-bunner bunner">
+                <div class="bunner__content">
+                    <h3 class="try__title section-title">Хотите попробовать?</h3>
+                    <p class="try__subtitle">Запишитесь на пробное бесплатное занятие по робототехнике, заполнив форму обратного звонка. Мы перезвоним вам в ближайшее время.</p>
+                    <img src="./img/try-adaptive.png" alt="" class="try__bunner-adaptive">
+                    <a href="#!" class="try__btn white-btn modal-btn" data-modal="request">Попробовать бесплатно</a>
+                    <a href="#!" class="try__btn green-btn green-filled modal-btn" data-modal="request"><div><span>Попробовать бесплатно</span></div></a>
+                </div>
+            </section>
+        </div>
+        <section class="price" id="price">
+            <div class="wrapper">
+                <h3 class="section-title price__title">Стоимость</h3>
+
+                <div class="price__cards">
+                    <div class="price__card card-1">
+                        <img src="./img/price-1.svg" alt="" class="price__card-ico">
+
+                        <p class="price__card-title">Групповое занятие</p>
+                        <p class="price__card-value">1 200 ₽</p>
+                    </div>
+                    <div class="price__card card-2">
+                        <img src="./img/price-2.svg" alt="" class="price__card-ico">
+
+                        <p class="price__card-title">Групповое занятие</p>
+                        <p class="price__card-value">1 200 ₽</p>
+                    </div>
+                    <div class="price__card card-3">
+                        <img src="./img/price-3.svg" alt="" class="price__card-ico">
+
+                        <p class="price__card-title">Групповое занятие</p>
+                        <p class="price__card-value">1 200 ₽</p>
+                    </div>
+                    <div class="price__card card-4">
+                        <img src="./img/price-4.svg" alt="" class="price__card-ico">
+
+                        <p class="price__card-title">1 занятие — 2 академических часа (90 минут)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="registration">
+            <div class="wrapper">
+                <h3 class="section-title registration__title">Запишитесь на пробный урок</h3>
+
+                <div class="registration__block">
+                    <form action="mail.php" method="POST" class="registartion__form form">
+                        <p class="form__title">Оставьте заявку</p>
+                        
+                        <input type="text" class="form__input" name="name" placeholder="Имя">
+                        <input type="tel" class="form__input" name="tel" placeholder="Телефон">
+                        <label class="form__checkbox custom-checkbox">
+                            <input type="checkbox" value="yes" name="agree" required>
+                            <span>Даю согласие на обработку 
+                            <a href="#!">Персональных данных</a></span>
+                        </label>
+                        <button class="form__submit green-btn green-filled" type="submit"><div ><span>Отправить</span></div></button>
+                    </form>
+                    
+                    <div class="registration__img-wrapper">
+                        <img src="./img/registration-img.png" alt="" class="registartion__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="lessons">
+            <div class="wrapper">
+                <div class="lessons__bunner">
+                    <a href="#!" class="lessons__btn green-btn green-filled lessons-adaptive modal-btn" data-modal="request"><div><span>Обучение онлайн</span></div></a>
+
+                    <img src="./img/lessons-img.png" alt="" class="lessons__bunner-img m-768">
+                    <img src="./img/lessons-768.png" alt="" class="lessons__bunner-img a-768">
+
+                    <div class="lessons__bunner-content">
+                        <h3 class="section-title lessons__title">Занятия онлайн</h3>
+                        <p class="lessons__subtitle">Формат для тех, кто хочет получать знания из дома. Перейдите на нашу платформу для дистанционного обучения, чтобы начать.</p>
+                        <a href="#!" class="lessons__btn green-btn green-filled modal-btn" data-modal="request"><div><span>Обучение онлайн</span></div></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <div class="wrapper">
+                <h3 class="section-title contacts__title">Контакты</h3>
+
+                <div class="contacts__map-block">
+                    <div class="map__block">
+                        <div class="map__block-section">
+                            <p class="map__block-title">Режим работы</p>
+                            <span class="map__block-subtitle"><img src="./img/map-worktime.svg" alt="">Ежедневно с 10.00 до 19.00</span>
+                        </div>
+                        <div class="map__block-section">
+                            <p class="map__block-title">Телефон</p>
+                            <span class="map__block-subtitle"><img src="./img/map-tel.svg" alt="">+7 981 204-48-40</span>
+                        </div>
+                        <div class="map__block-section">
+                            <p class="map__block-title">Адреса</p>
+                            <span class="map__block-subtitle map-mark" data-coords="59.941799064180785,30.356399999999958"><img src="./img/map-address.svg" alt="">Санкт-Петербург, ул. Маяковского 37В</span>
+
+                            <span class="map__block-subtitle map-mark" data-coords="59.941089, 30.214987"><img src="./img/map-address.svg" alt="">Санкт-Петербург, ул. Кораблестроителей, 16 к2</span>
+                        </div>
+                    </div>
+
+                    <div id="contacts-map">
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <div class="footer__bunner">
+                <div class="footer__wrapper">
+                    <img src="./img/logo.png" alt="" class="footer__logo">
+
+                    <ul class="footer__list">
+                        <li class="footer__list-item footer__list-title">Навигация</li>
+                        <li class="footer__list-item">
+                            <a href="#about">О нас</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#price">Стоимость</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer__list">
+                        <li class="footer__list-item footer__list-title">Соцсети</li>
+                        <li class="footer__list-item">
+                            <a href="https://vk.com/robotohod">Вконтакте</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="https://t.me/s/robotohod">Телеграм</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="https://www.youtube.com/@robotohod78">Ютуб</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="https://rutube.ru/channel/30231437/">Рутуб</a>
+                        </li>
+                    </ul>
+
+                    <button class="footer__btn green-btn green-filled modal-btn" data-modal="question"><div><span>Задать вопрос</span></div></button>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <a href="#!" class="footer__copyright-item">Политика конфиденциальности</a>
+                <p class="footer__copyright-item">© 2024 Роботоход</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+
+    <div class="cookie__notification">
+        <p class="cookie__notification-title">Мы используем файлы cookie, чтобы предоставить больше возможностей при использовании сайта</p>
+        <button class="cookie__notification-btn green-btn"><div><span>Хорошо</span></div></button>
+    </div>
+
+    <div class="modal modal-request" data-modal="request">
+        <div class="modal__content">
+            <form action="mail.php" method="POST" class="modal__form form">
+            <span class="modal__close"><img src="./img/modal-close.svg" alt=""></span>
+            <p class="modal__title form__title">Оставьте заявку</p>
+
+                <input type="text" name="name" class="modal__input form__input" placeholder="Имя">
+                <input type="tel" name="tel" class="modal__input form__input" placeholder="Телефон">
+                <label class="form__checkbox custom-checkbox">
+                    <input type="checkbox" value="yes" name="agree" required>
+                    <span>Даю согласие на обработку <a href="#!">Персональных данных</a></span>
+                </label>
+                <button class="form__submit green-btn green-filled" type="submit"><div><span>Отправить</span></div></button>
+            </form>
+        </div>
+    </div>
+    <div class="modal modal-registration" data-modal="registration">
+        <div class="modal__content">
+            <form action="mail.php" method="POST" class="modal__form form">
+            <span class="modal__close"><img src="./img/modal-close.svg" alt=""></span>
+            <p class="modal__title form__title">Записаться</p>
+
+                <input type="text" name="name" class="modal__input form__input" placeholder="Имя">
+                <input type="tel" name="tel" class="modal__input form__input" placeholder="Телефон">
+                <label class="form__checkbox custom-checkbox">
+                    <input type="checkbox" value="yes" name="agree" required>
+                    <span>Даю согласие на обработку <a href="#!">Персональных данных</a></span>
+                </label>
+                <button class="form__submit green-btn green-filled" type="submit"><div ><span>Отправить</span></div></button>
+            </form>
+        </div>
+    </div>
+    <div class="modal modal-question" data-modal="question">
+        <div class="modal__content">
+            <form action="mail.php" method="POST" class="modal__form form">
+            <span class="modal__close"><img src="./img/modal-close.svg" alt=""></span>
+            <p class="modal__title form__title">Задать вопрос</p>
+
+                <input type="text" name="name" class="modal__input form__input" placeholder="Имя">
+                <input type="tel" name="tel" class="modal__input form__input" placeholder="Телефон">
+                <label class="form__checkbox custom-checkbox">
+                    <input type="checkbox" value="yes" name="agree" required>
+                    <span>Даю согласие на обработку <a href="#!">Персональных данных</a></span>
+                </label>
+                <button class="form__submit green-btn green-filled" type="submit"><div ><span>Отправить</span></div></button>
+            </form>
+        </div>
+    </div>
+    <div class="modal modal-burger" data-modal="burger">
+        <div class="modal__content">
+            <span class="modal__close"><img src="./img/burger-close.svg" alt=""></span>
+            <nav class="burger__nav">
+                <ul class="header__nav-list">
+                    <li class="nav__list-item">
+                        <a href="#about" class="nav__list-link">О нас</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#price" class="nav__list-link">Стоимость</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#contacts" class="nav__list-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+                <div class="burger__btns">
+                    <btn class="header__burger-btn green-btn green-filled modal-btn" data-modal="registration"><div><span>Записаться</span></div></btn>
+                    <btn class="header__burger-btn green-btn modal-btn" data-modal="question"><div><span>Задать вопрос</span></div></btn>
+                </div>
+
+                <div class="header__info-number">
+                    <p class="header__tel">+7 981 204-48-40</p>
+                    <p class="header__worktime">ПН-ПТ 10:00–22:00</p>
+                </div>
+
+                <div class="burger__links">
+                    <a href="https://t.me/s/robotohod" class="burger__link">
+                        <img src="./img/tg-ico.svg" alt="">
+                    </a>
+                    <a href="https://vk.com/robotohod" class="burger__link">
+                        <img src="./img/vk-ico.svg" alt="">
+                    </a>
+                    <a href="https://www.youtube.com/@robotohod78" class="burger__link">
+                        <img src="./img/yt-ico.svg" alt="">
+                    </a>
+                    <a href="https://rutube.ru/channel/30231437/" class="burger__link">
+                        <img src="./img/rt-ico.svg" alt="">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>
